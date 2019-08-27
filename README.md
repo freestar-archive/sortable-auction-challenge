@@ -25,10 +25,13 @@ a list of auctions to run. Each auction lists the site, which ad units are being
 bid on, and a list of bids that have been requested on your behalf.
 
 For each auction, you should find the highest valid bidder for each ad unit, after
-applying the adjustment factor. For instance, a bid of $0.95 and an adjustment
-factor of 0 will beat a bid of $1.00 with an adjustment factor of -0.1. When reporting
-the winners, use the bid amounts provided by the bidder, rather than the adjusted
-values.
+applying the adjustment factor. An adjustment factor of -0.01 means that bids are
+reduced by 1%; an adjustment of 0.05 would increase them by 5%. (Positive
+adjustments are rare in real life, but possible.)
+For example, a bid of $0.95 and an adjustment
+factor of 0.05 (adjusted to $0.9975) will beat a bid of $1.10 with an adjustment
+factor of -0.1 (adjusted to $0.99). When reporting the winners, use the bid
+amounts provided by the bidder, rather than the adjusted values.
 
 It is possible that a bidder will submit multiple bids for the same ad unit in
 the same auction.
