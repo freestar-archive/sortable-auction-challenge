@@ -1,6 +1,6 @@
 # Auction Coding Challenge
 
-One of the things that the Sapphire team at Sortable works on is software that
+One of the things that the Engineering team at Sortable works on is software that
 runs ad auctions, either in the browser or server-side. The goal of this challenge
 is to write program that will run a simple auction, while enforcing data validity.
 
