@@ -67,7 +67,7 @@ building and running your submission with the same toolchain as you.
 
 ## Evaluation
 
-Your code will be first be evaluated mechanically, running it through various test cases
+Your code will be first evaluated mechanically, running it through various test cases
 to check its correctness. Your code will be built and run using the commands
 
 ```bash
