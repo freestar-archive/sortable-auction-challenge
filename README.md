@@ -41,10 +41,12 @@ this site, the bid is for an ad unit not involved in this auction, the bidder
 is unknown, or if the *adjusted* bid value is less than the site's floor.
 
 An auction is invalid if the site is unrecognized, or there are no valid bids.
-In the case of an invalid auction, just return an empty list.
+In the case of an invalid auction, just return an empty list of bids.
 
-The output of your program should be a list of auction results. The result of
-each auction is a list of winning bids.
+The output of your program should be a JSON list of auction results printed to [stdout][stdout].
+The result of each auction is a list of winning bids. The contents of `output.json`
+are an example of valid output. Ensure that when run as above, the **only** output
+of your program on stdout is the auction results.
 
 ## Inputs
 
@@ -63,9 +65,23 @@ building and testing your submission. Rename the appropriate template to
 `Dockerfile`, or create your own. By using Docker, you can ensure that we are
 building and running your submission with the same toolchain as you.
 
-## Example build and execution
+## Evaluation
+
+Your code will be first evaluated mechanically, running it through various test cases
+to check its correctness. Your code will be built and run using the commands
 
 ```bash
 $ docker build -t challenge .
-$ docker run -i -v /path/to/challenge/config.json:/auction/config.json challenge < /path/to/challenge/input.json
+$ docker run -i -v /path/to/test/config.json:/auction/config.json challenge < /path/to/test/input.json
 ```
+
+so please ensure that your submission can be run this way.
+If your build process requires additional steps, please note them near the top of
+your submission's README.md, but the end result must be a Docker image that can be
+run using the command above.
+
+After running our tests, the code will be reviewed by a developer. This is an opportunity
+for you to demonstrate your knowledge of best practices, as well as your familiarity
+with your chosen language, and its library ecosystem.
+
+[stdout]: https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)
