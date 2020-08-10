@@ -2,7 +2,7 @@
 
 One of the things that the Engineering team at Sortable works on is software that
 runs ad auctions, either in the browser or server-side. The goal of this challenge
-is to write program that will run a simple auction, while enforcing data validity.
+is to write a program that will run a simple auction, while enforcing data validity.
 
 ## Concepts
 
@@ -61,21 +61,24 @@ Sample config, inputs and expected output are included in this repo to help you
 test your submission.
 
 Also included are some sample Dockerfiles for various languages, to be used for
-building and testing your submission. Rename the appropriate template to
-`Dockerfile`, or create your own. By using Docker, you can ensure that we are
-building and running your submission with the same toolchain as you.
+building and testing your submission. You may use any other language you are
+comfortable with, though keep in mind that the code will be reviewed by a developer.
+Rename the appropriate template to `Dockerfile`, or create your own.
+By using Docker, you can ensure that we are building and running your
+submission with the same toolchain as you.
 
 ## Evaluation
 
 Your code will be first evaluated mechanically, running it through various test cases
-to check its correctness. Your code will be built and run using the commands
+to check its correctness. Your code will be built and run using these commands:
 
 ```bash
 $ docker build -t challenge .
 $ docker run -i -v /path/to/test/config.json:/auction/config.json challenge < /path/to/test/input.json
 ```
 
-so please ensure that your submission can be run this way.
+**Please ensure that your submission can be run this way.**
+
 If your build process requires additional steps, please note them near the top of
 your submission's README.md, but the end result must be a Docker image that can be
 run using the command above.
