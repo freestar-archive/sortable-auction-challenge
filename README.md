@@ -8,7 +8,7 @@ is to write a program that will run a simple auction, while enforcing data valid
 
 Sortable manages ads on many different websites. Each site has a different
 configuration: which bidders are permitted to bid on ads on that site, and an
-auction 'floor' that bids must exceed.
+auction 'floor' that bids must meet or exceed.
 
 Each bidder also has a configuration. For this challenge we have significantly
 reduced the configuration to consist of an adjustment to be applied to each bid
