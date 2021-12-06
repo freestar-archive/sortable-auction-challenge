@@ -1,12 +1,12 @@
 # Auction Coding Challenge
 
-One of the things that the Engineering team at Sortable works on is software that
+One of the things that the Engineering team at Freestar works on is software that
 runs ad auctions, either in the browser or server-side. The goal of this challenge
 is to write a program that will run a simple auction, while enforcing data validity.
 
 ## Concepts
 
-Sortable manages ads on many different websites. Each site has a different
+Freestar manages ads on many different websites. Each site has a different
 configuration: which bidders are permitted to bid on ads on that site, and an
 auction 'floor' that bids must meet or exceed.
 
